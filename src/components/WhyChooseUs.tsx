@@ -1,45 +1,41 @@
+
 "use client";
 import React from "react";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
-import Image from "next/image";
 
-const musicSchoolContent = [
-    {
-      title: 'Discover Your Sound with Us: A Personal Journey in Music Mastery',
-      description:
-        'Embark on a musical journey that’s uniquely yours. Our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our music school, your aspirations meet our dedicated support, creating a harmonious path to mastery.',
-    },
-    {
-      title: 'Discover Your Sound with Us: A Personal Journey in Music Mastery',
-      description:
-        'Embark on a musical journey that’s uniquely yours. Our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our music school, your aspirations meet our dedicated support, creating a harmonious path to mastery.',
-    },
-    {
-      title: 'Discover Your Sound with Us: A Personal Journey in Music Mastery',
-      description:
-        'Embark on a musical journey that’s uniquely yours. Our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our music school, your aspirations meet our dedicated support, creating a harmonious path to mastery.',
-    },
-    {
-      title: 'Live Feedback & Engagement',
-      description:
-        'Immerse yourself in an interactive learning experience where feedback is immediate, just like real-time changes in a collaborative project. This approach enhances your understanding and mastery of music concepts and performance techniques.',
-    },
-    {
-      title: 'Cutting-Edge Curriculum',
-      description:
-        'Our curriculum is continuously updated to include the latest music education trends and technologies, ensuring you’re always learning with the most current and effective methods. Say goodbye to outdated materials and welcome an education that evolves with the industry.',
-    },
-    {
-      title: 'Limitless Learning Opportunities',
-      description:
-        'With our expansive resource library and dynamic course offerings, you’ll never find yourself without something new to explore. Our platform provides continuous opportunities for growth, ensuring your musical skills are always advancing.',
-    },
-  ];
+const codingSchoolContent = [
+  {
+    title: 'Personalized Learning Experience',
+    description:
+      'Embark on a coding journey tailored specifically to your goals. Our personalized instruction adapts to your unique needs, fostering an environment where creativity and problem-solving flourish. Your aspirations are supported by our dedicated instructors, guiding you on the path to coding mastery.',
+  },
+  {
+    title: 'Hands-On Project-Based Learning',
+    description:
+      'Dive into real-world projects that enhance your skills through practical application. Our interactive approach ensures that you not only learn coding concepts but also implement them, preparing you for challenges in the tech industry.',
+  },
+  {
+    title: 'Immediate Feedback & Engagement',
+    description:
+      'Experience an engaging learning atmosphere where feedback is instantaneous. This real-time interaction helps reinforce your understanding and accelerates your growth as a programmer, making the learning process both effective and enjoyable.',
+  },
+  {
+    title: 'Up-to-Date Curriculum',
+    description:
+      'Stay ahead in the fast-paced world of technology with our continuously updated curriculum. We incorporate the latest trends and tools in coding education, ensuring you acquire the most relevant skills for today’s job market.',
+  },
+  {
+    title: 'Endless Learning Opportunities',
+    description:
+      'With a vast library of resources and diverse course offerings, you’ll always have new material to explore. Our platform is designed for lifelong learning, ensuring your coding skills evolve and expand as you advance in your career.',
+  },
+];
+
 
 function WhyChooseUs() {
   return (
-    <div >
-      <StickyScroll content={musicSchoolContent}></StickyScroll>
+    <div>
+        <StickyScroll content={codingSchoolContent} />
     </div>
   )
 }

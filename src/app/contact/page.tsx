@@ -1,28 +1,32 @@
-"use client";
+'use client';
 
-import React, { FormEvent, useState } from "react";
-import { BackgroundBeams } from "@/components/ui/background-beams";
+import React, { FormEvent, useState } from 'react';
+import { BackgroundBeams } from '@/components/ui/background-beams';
 
-function page() {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+function MusicSchoolContactUs() {
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log("Submitted:", { email, message });
+    console.log('Submitted:', { email, message });
   };
+
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 py-12 pt-36 relative">
+      {' '}
+      {/* Ensure the container is relative */}
+      {/* BackgroundBeams with adjusted z-index */}
       <BackgroundBeams className="absolute top-0 left-0 w-full h-full z-0" />
-      <div className="max-w-2xl  p-4 mx-auto relative z-10">
-        {" "}
+      {/* Content with higher z-index */}
+      <div className="max-w-2xl mx-auto p-4 relative z-10">
+        {' '}
+        {/* Add relative and z-10 to bring content to the front */}
         <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8 text-white">
           Contact Us
         </h1>
         <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center">
-          We&apos;re here to help with any questions about our courses,
-          programs, or events. Reach out and let us know how we can assist you
-          in your musical journey.
+          We&apos;re here to assist you with any questions about our courses, programs, or events. Don’t hesitate to reach out and let us know how we can support you on your coding journey.
         </p>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
           <input
@@ -53,4 +57,4 @@ function page() {
   );
 }
 
-export default page;
+export default MusicSchoolContactUs;

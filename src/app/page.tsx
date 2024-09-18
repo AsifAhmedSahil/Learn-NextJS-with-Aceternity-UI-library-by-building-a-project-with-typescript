@@ -2,6 +2,7 @@ import FeaturedCourses from "@/components/FeaturedCourses";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Instructors from "@/components/Instructors";
+import ScrollUpButton from "@/components/ScrollUpButton";
 import TestimonialCards from "@/components/TestimonialCards";
 import UpcomingWebiners from "@/components/UpcomingWebiners";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -11,6 +12,7 @@ export default function Home() {
     <main className="min-h-screen w-full bg-black/[0.96] antialiased bg-grid-white/[0.02]">
       
       <HeroSection/>
+      <ScrollUpButton/>
       <FeaturedCourses/>
       <WhyChooseUs />
       <TestimonialCards/>
